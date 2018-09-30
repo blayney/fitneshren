@@ -1,0 +1,34 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "3eee75a3d42fb68ab005e7cabfabc27879f1ef4edfe857435b5e3afa73852dd4ec39dc02cea5b3b55f0d1e59f9bad57bf1a5acc4c9c72057a07be1e401d62417b0b26804d9f606dca1f23de321f6893319e83a67f92cb41e6a6f7cde796ff451b7805785956332b1e9c1ec13566959cd7b007c3344c84735689900c229318b69a3547c047c716f4bdb88ce0d59d74cd20e9f3363417413078aba424e487a8aa1b7415141d664a2fff927da52b019521c445b0b67b31354518508e6b5c5fb8fb016691d63bce040b509903e307b91f966bf516f85fadd63513cfc66e24e3ef777ec289e8bd1fb830f57e9ef9ae2d5848c3e622a91346f5b52ac7fdaf9330c02d6",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/fitness_app"
+}
