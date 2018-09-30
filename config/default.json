@@ -1,0 +1,34 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "6d9067c8684633ff16bbc6d0445bfb14ac139df9534a9094488021528e5e8b8902729d0ac2f3326298ec9ea2a4358c028992dce36de9923d623184b3430575fb2ed96940f6be516f8fc5a49c7e93c55cc55acf5ed20e043b483e06c9123c02f6ed62ca1e62613ae1771ff3d48982fae1b8c471832572669fbc6d7018359332b180378031833e2bf3680aa56892cd02ffcfcd3f753a094e493e0acc85a7f52c7e6a1ccd3260c67dca2ccc02e4d934c178610130da68c0c4e0ec06cab97480b8245c62fa5bea91a1b71900c99340a0efa061302e7a881603c855b2bdb02ccf11d6793f90a1e34d66b3efee66eff3a9faab4bc09ecd7e228ba60536d6596d8238cf",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mysql": "mysql://root:@localhost:3306/fitness_app"
+}
