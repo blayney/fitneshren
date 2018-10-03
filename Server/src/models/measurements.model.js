@@ -6,12 +6,12 @@ const DataTypes = Sequelize.DataTypes;
 module.exports = function(app) {
   const sequelizeClient = app.get('sequelizeClient');
   const measurements = sequelizeClient.define('measurements', {
-    name: {
-      type: DataTypes.STRING,
+    height: {
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
-    value: {
-      type: DataTypes.INTEGER,
+    weight: {
+      type: DataTypes.FLOAT,
       allowNull: false,
     }
   }, {
@@ -26,6 +26,7 @@ module.exports = function(app) {
   measurements.associate = function(models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
+    measurements.userId = measurements.belongsTo(models.users);
   };
 
   return measurements;
