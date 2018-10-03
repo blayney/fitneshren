@@ -33,8 +33,11 @@ module.exports = function(app) {
   users.associate = function(models) {
     users.coachId = users.belongsTo(models.users, {
       as: "coach"
-    })
-  };
+    });
+    users.coacheeId = users.hasMany(models.users, {
+      as: "coachee"
+    });
+  }
 
   return users;
 };

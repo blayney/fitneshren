@@ -3,12 +3,16 @@
 const Sequelize = require('sequelize');
 const DataTypes = Sequelize.DataTypes;
 
-module.exports = function (app) {
+module.exports = function(app) {
   const sequelizeClient = app.get('sequelizeClient');
   const measurements = sequelizeClient.define('measurements', {
-    text: {
+    name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+    },
+    value: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
     }
   }, {
     hooks: {
@@ -19,7 +23,7 @@ module.exports = function (app) {
   });
 
   // eslint-disable-next-line no-unused-vars
-  measurements.associate = function (models) {
+  measurements.associate = function(models) {
     // Define associations here
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
   };

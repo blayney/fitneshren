@@ -123,6 +123,7 @@ const displayLogin = (error) => {
 }
 const displayLoggedin = () => {
   appDom.innerHTML =
-    '<h1>Logged In</h1><button type="button" onclick="app.logout(); appDom.innerHTML = loginHTML">Logout</button>';
+    `<h1>Logged In</h1>
+    <button type="button" onclick="app.logout(); appDom.innerHTML = loginHTML">Logout</button>`
 }
 login();
