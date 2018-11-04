@@ -52,3 +52,13 @@ __0.1.0__
 ## License
 
 Copyright (c) 2018
+
+# Fitnesshren Client
+
+## Getting Started
+
+Make sure you have [CocoaPods](https://cocoapods.org)  installed. Then run
+
+    pod install
+
+in the project directory. Remember to open the `.xcworkspace` file instead of the `.xcodeproj` file!
