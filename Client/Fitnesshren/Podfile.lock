@@ -1,0 +1,52 @@
+PODS:
+  - EZLoadingActivity (1.01)
+  - Feathers (5.3.0):
+    - Feathers/Core (= 5.3.0)
+  - Feathers/Core (5.3.0):
+    - KeychainSwift
+    - ReactiveSwift
+    - Result
+  - ISHPullUp (1.0.7)
+  - KeychainSwift (12.0.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
+  - SwiftyUtils (3.0.0)
+
+DEPENDENCIES:
+  - EZLoadingActivity
+  - Feathers
+  - ISHPullUp
+  - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `982bffaadf8e831e75d3444dfba56af4d3962224`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - EZLoadingActivity
+    - Feathers
+    - ISHPullUp
+    - KeychainSwift
+    - ReactiveSwift
+    - Result
+
+EXTERNAL SOURCES:
+  SwiftyUtils:
+    :commit: 982bffaadf8e831e75d3444dfba56af4d3962224
+    :git: https://github.com/tbaranes/SwiftyUtils.git
+
+CHECKOUT OPTIONS:
+  SwiftyUtils:
+    :commit: 982bffaadf8e831e75d3444dfba56af4d3962224
+    :git: https://github.com/tbaranes/SwiftyUtils.git
+
+SPEC CHECKSUMS:
+  EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
+  Feathers: d88238d23a6a2e2f80bc9c239e58ee3a04b8de5f
+  ISHPullUp: eaa91bef06270264e1f923bc764705173d341495
+  KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  SwiftyUtils: 9d09fedd742f9959e5682784657e913d5c554e6d
+
+PODFILE CHECKSUM: bb9733337a046dda3179eb81e4abfb5e365cd91b
+
+COCOAPODS: 1.5.3
