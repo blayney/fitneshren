@@ -1,11 +1,14 @@
 
 
 const processManager = require('../../hooks/process-manager');
+const {authenticate} = require('@feathersjs/authentication').hooks;
+const historyProtect = require('../../hooks/history-protect');
+const historyProtectFind = require('../../hooks/history_protect_find');
 
 module.exports = {
   before: {
-    all: [],
-    find: [],
+    all: [authenticate('jwt') ],
+    find: [historyProtectFind()],
     get: [],
     create: [processManager()],
     update: [],
@@ -16,11 +19,11 @@ module.exports = {
   after: {
     all: [],
     find: [],
-    get: [],
+    get: [historyProtect()],
     create: [],
-    update: [],
-    patch: [],
-    remove: []
+    update: [historyProtect()],
+    patch: [historyProtect()],
+    remove: [historyProtect()]
   },
 
   error: {
