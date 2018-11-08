@@ -7,4 +7,7 @@ class BarChartView: UIView {
             self.setNeedsDisplay()
         }
     }
+    
+    let barWidth = 12.f
+    
 }
