@@ -21,6 +21,12 @@ class BarChartView: UIView {
             let barY = graphHeight * (1.0 - bar.0).f
             let barHeight = graphHeight - barY
             let subBars = [(0, bar.1), (1, bar.2), (2, bar.3)].sorted(by: { $0.1 > $1.1 })
+            
+            // draw gray bar
+            let grayBarPath = UIBezierPath(roundedRect: CGRect(x: barX, y: barY, width: barWidth, height: barHeight), cornerRadius: barWidth / 2)
+            UIColor.veryLightPink.setFill()
+            grayBarPath.fill()
+            
         }
     }
 }
