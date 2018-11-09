@@ -27,6 +27,18 @@ class BarChartView: UIView {
             UIColor.veryLightPink.setFill()
             grayBarPath.fill()
             
+            // draw sub bars
+            let colorDict: [Int: UIColor] = [
+                0: .pinkishTan,
+                1: .darkPeach,
+                2: .paleRed
+            ]
+            
+            for subBar in subBars {
+                let subBarPath = UIBezierPath(roundedRect: CGRect(x: barX, y: graphHeight - barHeight * subBar.1.f, width: barWidth, height: barHeight * subBar.1.f), cornerRadius: barWidth / 2)
+                colorDict[subBar.0]!.setFill()
+                subBarPath.fill()
+            }
         }
     }
 }
