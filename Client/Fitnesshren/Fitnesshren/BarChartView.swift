@@ -39,6 +39,14 @@ class BarChartView: UIView {
                 colorDict[subBar.0]!.setFill()
                 subBarPath.fill()
             }
+            
+            let textRect = CGRect(x: barX - separator / 2, y: barY + barHeight, width: separator + barWidth, height: 14)
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.alignment = .center
+            (weekdays[index] as NSString).draw(in: textRect, withAttributes: [
+                NSAttributedString.Key.paragraphStyle: paragraphStyle,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)
+                ])
         }
     }
 }
