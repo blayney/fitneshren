@@ -30,4 +30,15 @@ class VerticalBarView : UIView {
         }
     }
     
+    @IBInspectable
+    var subtitleText: String? {
+        get { return subtitleLabel.text }
+        set {
+            subtitleLabel.text = newValue
+            let font = UIFont(name: "SFProDisplay-Thin", size: 0)!
+            let fontSize = fontSizeThatFits(size: subtitleLabel.bounds.size, text: newValue! as NSString, font: font)
+            subtitleLabel.font = font.withSize(fontSize)
+        }
+    }
+    
 }
