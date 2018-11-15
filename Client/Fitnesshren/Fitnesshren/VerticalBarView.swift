@@ -41,4 +41,16 @@ class VerticalBarView : UIView {
         }
     }
     
+    override func draw(_ rect: CGRect) {
+        let path = UIBezierPath(
+            roundedRect: CGRect(
+                x: 0,
+                y: height * (1 - percentage).f,
+                width: width,
+                height: height * percentage.f),
+            cornerRadius: layer.cornerRadius)
+        
+        color.setFill()
+        path.fill()
+    }
 }
