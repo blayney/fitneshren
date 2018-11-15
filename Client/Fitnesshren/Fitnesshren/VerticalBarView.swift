@@ -12,4 +12,11 @@ class VerticalBarView : UIView {
         }
     }
     
+    @IBInspectable
+    var color: UIColor = .white {
+        didSet {
+            self.setNeedsDisplay()
+        }
+    }
+    
 }
