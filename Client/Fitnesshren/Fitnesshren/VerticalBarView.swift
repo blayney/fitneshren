@@ -74,4 +74,14 @@ class VerticalBarView : UIView {
         subtitleLabel.textColor = .white
         self.addSubview(subtitleLabel)
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        commonInit()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        commonInit()
+    }
 }
