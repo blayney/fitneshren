@@ -53,4 +53,11 @@ class VerticalBarView : UIView {
         color.setFill()
         path.fill()
     }
+    
+    fileprivate func commonInit() {
+        self.layer.cornerRadius = self.width * 3 / 14
+        
+        self.backgroundColor = UIColor.veryPaleGray
+        self.clipsToBounds = true
+    }
 }
