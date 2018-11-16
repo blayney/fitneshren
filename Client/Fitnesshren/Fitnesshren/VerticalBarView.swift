@@ -59,5 +59,12 @@ class VerticalBarView : UIView {
         
         self.backgroundColor = UIColor.veryPaleGray
         self.clipsToBounds = true
+        titleLabel = UILabel(frame: CGRect(
+            x: width / 6,
+            y: height * 19 / 32,
+            width: width - width / 6,
+            height: height * 3 / 16))
+        titleLabel.textColor = .white
+        self.addSubview(titleLabel)
     }
 }
