@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        print(UIFont.fontNames(forFamilyName: "SF Pro Display"))
+        
+        print((view.subviews.first! as! UILabel).font!.fontName)
     }
 
 
