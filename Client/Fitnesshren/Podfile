@@ -9,5 +9,5 @@ target 'Fitnesshren' do
   pod 'EZLoadingActivity', :git => 'https://github.com/hons82/EZLoadingActivity.git'
   pod 'Feathers'
   pod 'ISHPullUp'
-
+  pod 'FeathersSwiftSocketIO'
 end

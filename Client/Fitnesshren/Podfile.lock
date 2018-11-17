@@ -6,26 +6,39 @@ PODS:
     - KeychainSwift
     - ReactiveSwift
     - Result
+  - FeathersSwiftSocketIO (4.0.0):
+    - FeathersSwiftSocketIO/Core (= 4.0.0)
+  - FeathersSwiftSocketIO/Core (4.0.0):
+    - Feathers
+    - Result
+    - Socket.IO-Client-Swift
   - ISHPullUp (1.0.7)
   - KeychainSwift (12.0.0)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.0.0)
+  - Socket.IO-Client-Swift (13.3.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
   - SwiftyUtils (3.0.0)
 
 DEPENDENCIES:
   - EZLoadingActivity (from `https://github.com/hons82/EZLoadingActivity.git`)
   - Feathers
+  - FeathersSwiftSocketIO
   - ISHPullUp
   - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `982bffaadf8e831e75d3444dfba56af4d3962224`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Feathers
+    - FeathersSwiftSocketIO
     - ISHPullUp
     - KeychainSwift
     - ReactiveSwift
     - Result
+    - Socket.IO-Client-Swift
+    - Starscream
 
 EXTERNAL SOURCES:
   EZLoadingActivity:
@@ -45,12 +58,15 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   EZLoadingActivity: ea5e95af77f5c01b1d5209332dbe59fbb794f12b
   Feathers: d88238d23a6a2e2f80bc9c239e58ee3a04b8de5f
+  FeathersSwiftSocketIO: 079472bcd0cf76df497e1fc28785d76e871b1beb
   ISHPullUp: eaa91bef06270264e1f923bc764705173d341495
   KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  Socket.IO-Client-Swift: 79f8f85fa44881838175a20f9bd2c32bef2c9d37
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyUtils: 9d09fedd742f9959e5682784657e913d5c554e6d
 
-PODFILE CHECKSUM: 1a1e20a3640a25099fe04ec34ed120c33d642adb
+PODFILE CHECKSUM: 36d6506bd4e15f64222dbf7fa6ba7faa778b4fcb
 
 COCOAPODS: 1.5.3
