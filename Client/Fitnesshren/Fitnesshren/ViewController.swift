@@ -34,5 +34,18 @@ class ViewController: UIViewController {
     }
 
 
+    func getStuff() {
+        let history = feathers.service(path: "history")
+        history.request(.find(query: Query().eq(property: "user", value: "admin")))
+            .on(starting: {print("h started")},
+                started: {print("h starting")},
+                event: { (event) in print("h event: \(event)")},
+                failed: {print($0.localizedDescription)},
+                completed: {print("h completed")},
+                interrupted: {print("h interrupted")},
+                terminated: {print("h terminated")},
+                disposed: {print("h disposed")},
+                value: {print("h value: \($0)")}).start()
+    }
 }
 
