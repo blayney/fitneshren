@@ -10,6 +10,7 @@
 		5A350518218E1A8900BC7C23 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A350515218E1A8800BC7C23 /* BarChartView.swift */; };
 		5A350519218E1A8900BC7C23 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A350516218E1A8800BC7C23 /* CardTableViewCell.xib */; };
 		5A35051A218E1A8900BC7C23 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A350517218E1A8900BC7C23 /* CardTableViewCell.swift */; };
+		5A3533F72196E0AA009E9E61 /* VerticalBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3533F62196E0AA009E9E61 /* VerticalBarView.swift */; };
 		5A36AE0C218F013F00B2A91D /* FontSizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36AE0B218F013F00B2A91D /* FontSizeHelper.swift */; };
 		5A36AE0E218F018A00B2A91D /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36AE0D218F018A00B2A91D /* Styles.swift */; };
 		5A36AE18218F06E600B2A91D /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5A36AE10218F06E500B2A91D /* SF-Pro-Display-Medium.otf */; };
@@ -34,6 +35,7 @@
 		5A350515218E1A8800BC7C23 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		5A350516218E1A8800BC7C23 /* CardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		5A350517218E1A8900BC7C23 /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		5A3533F62196E0AA009E9E61 /* VerticalBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalBarView.swift; sourceTree = "<group>"; };
 		5A36AE0B218F013F00B2A91D /* FontSizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeHelper.swift; sourceTree = "<group>"; };
 		5A36AE0D218F018A00B2A91D /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		5A36AE10218F06E500B2A91D /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				5A350516218E1A8800BC7C23 /* CardTableViewCell.xib */,
 				5A4F38372165E61900364A8F /* AppDelegate.swift */,
 				5A4F38392165E61900364A8F /* ViewController.swift */,
+				5A3533F62196E0AA009E9E61 /* VerticalBarView.swift */,
 				5A36AE0D218F018A00B2A91D /* Styles.swift */,
 				5A4F383B2165E61900364A8F /* Main.storyboard */,
 				5A4F383E2165E61C00364A8F /* Assets.xcassets */,
@@ -224,10 +227,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Fitnesshren/Pods-Fitnesshren-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EZLoadingActivity/EZLoadingActivity.framework",
 				"${BUILT_PRODUCTS_DIR}/Feathers/Feathers.framework",
+				"${BUILT_PRODUCTS_DIR}/FeathersSwiftSocketIO/FeathersSwiftSocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/ISHPullUp/ISHPullUp.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -236,10 +242,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZLoadingActivity.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Feathers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeathersSwiftSocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISHPullUp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUtils.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3533F72196E0AA009E9E61 /* VerticalBarView.swift in Sources */,
 				5A36AE0C218F013F00B2A91D /* FontSizeHelper.swift in Sources */,
 				5A4F383A2165E61900364A8F /* ViewController.swift in Sources */,
 				5A4F38382165E61900364A8F /* AppDelegate.swift in Sources */,
