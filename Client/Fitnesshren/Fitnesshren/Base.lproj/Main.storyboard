@@ -8,11 +8,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Display-Thin.otf">
-            <string>SFProDisplay-Thin</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,73 +17,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzY-vk-Lmm">
-                                <rect key="frame" x="142" y="274" width="37" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lBi-X7-PxQ">
+                                <rect key="frame" x="8" y="40" width="304" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vl7-vw-WHg" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="128"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="48%"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.31764705882352939" green="0.22745098039215686" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="water"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C41-gH-zNM" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
+                                        <rect key="frame" x="78" y="0.0" width="70" height="128"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="1/2"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.83921568629999999" green="0.26274509800000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="gym"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-b6-6QL" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="0.0" width="70" height="128"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                                                <real key="value" value="0.69999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="1100"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.99607843137254903" green="0.80000000000000004" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="calories"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-iJ-Zj7" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
+                                        <rect key="frame" x="234" y="0.0" width="70" height="128"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="percentage">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="8"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.41176470588235292" green="0.38431372549019605" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="hours"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="C41-gH-zNM" firstAttribute="leading" secondItem="vl7-vw-WHg" secondAttribute="trailing" constant="8" symbolic="YES" id="3Y7-sF-VDo"/>
+                                    <constraint firstItem="vl7-vw-WHg" firstAttribute="top" secondItem="aJo-iJ-Zj7" secondAttribute="top" id="CAl-uH-q9r"/>
+                                    <constraint firstAttribute="trailing" secondItem="vl7-vw-WHg" secondAttribute="trailing" constant="234" id="MCN-EN-BRy"/>
+                                    <constraint firstItem="vl7-vw-WHg" firstAttribute="top" secondItem="C41-gH-zNM" secondAttribute="top" id="Mfr-VV-SWo"/>
+                                    <constraint firstItem="vl7-vw-WHg" firstAttribute="top" secondItem="lBi-X7-PxQ" secondAttribute="top" id="Qbw-jN-9Z5"/>
+                                    <constraint firstAttribute="height" constant="128" id="WuX-dc-mTv"/>
+                                    <constraint firstItem="vl7-vw-WHg" firstAttribute="top" secondItem="2PD-b6-6QL" secondAttribute="top" id="bLp-v4-oO3"/>
+                                    <constraint firstItem="aJo-iJ-Zj7" firstAttribute="leading" secondItem="lBi-X7-PxQ" secondAttribute="leading" constant="234" id="hFA-QM-lRh"/>
+                                    <constraint firstItem="2PD-b6-6QL" firstAttribute="leading" secondItem="lBi-X7-PxQ" secondAttribute="leading" constant="156" id="zSg-jF-aMt"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-HW-ZyY" customClass="PieChartView" customModule="Fitnesshren" customModuleProvider="target">
+                                <rect key="frame" x="40" y="303" width="240" height="236"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Thin" family="SF Pro Display" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vl7-vw-WHg" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
-                                <rect key="frame" x="9" y="40" width="70" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="percentage">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="48%"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.31764705882352939" green="0.22745098039215686" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="water"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C41-gH-zNM" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
-                                <rect key="frame" x="87" y="40" width="70" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="percentage">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="1/2"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.83921568629999999" green="0.26274509800000001" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="gym"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PD-b6-6QL" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
-                                <rect key="frame" x="165" y="40" width="70" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="percentage">
-                                        <real key="value" value="0.69999999999999996"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="1100"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.99607843137254903" green="0.80000000000000004" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="calories"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-iJ-Zj7" customClass="VerticalBarView" customModule="Fitnesshren" customModuleProvider="target">
-                                <rect key="frame" x="243" y="40" width="70" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="percentage">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="8"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.41176470588235292" green="0.38431372549019605" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="subtitleText" value="hours"/>
-                                </userDefinedRuntimeAttributes>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lBi-X7-PxQ" secondAttribute="trailing" constant="8" id="QyH-hp-dmk"/>
+                            <constraint firstItem="lBi-X7-PxQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="We2-6i-pyB"/>
+                            <constraint firstItem="lBi-X7-PxQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gNG-XB-Ubw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pieChart" destination="3VK-HW-ZyY" id="ZmC-xW-aSx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
