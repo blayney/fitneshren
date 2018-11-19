@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>735857651785-3r1jhk3pi1aqi23obk1235cmpaou65sb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.735857651785-3r1jhk3pi1aqi23obk1235cmpaou65sb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDVX7_1A9hSsHPHulWVa8Z82fk0dFcI9YQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>735857651785</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.github.sweeper777.Fitnesshren</string>
+	<key>PROJECT_ID</key>
+	<string>fitneshren</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fitneshren.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:735857651785:ios:b3dee08fa7365da1</string>
+	<key>DATABASE_URL</key>
+	<string>https://fitneshren.firebaseio.com</string>
+</dict>
+</plist>

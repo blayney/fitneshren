@@ -12,8 +12,57 @@ PODS:
     - Feathers
     - Result
     - Socket.IO-Client-Swift
+  - Firebase/Core (5.12.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.12.0):
+    - FirebaseCore (= 5.1.7)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.7):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+  - GoogleAppMeasurement (5.3.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.3.6):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.3.6)
+  - GoogleUtilities/Logger (5.3.6):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.3.6):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.3.6)"
+  - GoogleUtilities/Reachability (5.3.6):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.3.6):
+    - GoogleUtilities/Logger
   - ISHPullUp (1.0.7)
   - KeychainSwift (12.0.0)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
   - ReactiveSwift (4.0.0):
     - Result (~> 4.0)
   - Result (4.0.0)
@@ -26,15 +75,24 @@ DEPENDENCIES:
   - EZLoadingActivity (from `https://github.com/hons82/EZLoadingActivity.git`)
   - Feathers
   - FeathersSwiftSocketIO
+  - Firebase/Core
   - ISHPullUp
+  - Socket.IO-Client-Swift
   - SwiftyUtils (from `https://github.com/tbaranes/SwiftyUtils.git`, commit `982bffaadf8e831e75d3444dfba56af4d3962224`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Feathers
     - FeathersSwiftSocketIO
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleUtilities
     - ISHPullUp
     - KeychainSwift
+    - nanopb
     - ReactiveSwift
     - Result
     - Socket.IO-Client-Swift
@@ -59,14 +117,21 @@ SPEC CHECKSUMS:
   EZLoadingActivity: ea5e95af77f5c01b1d5209332dbe59fbb794f12b
   Feathers: d88238d23a6a2e2f80bc9c239e58ee3a04b8de5f
   FeathersSwiftSocketIO: 079472bcd0cf76df497e1fc28785d76e871b1beb
+  Firebase: 9190018e296139d938b99521cde0c15a6e8d2946
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
+  FirebaseCore: 027d350adc039aa5483357c6f56556f117c5170e
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
+  GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
   ISHPullUp: eaa91bef06270264e1f923bc764705173d341495
   KeychainSwift: d5e776578587ee5958ce36601df22f168f65138a
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   Socket.IO-Client-Swift: 79f8f85fa44881838175a20f9bd2c32bef2c9d37
   Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   SwiftyUtils: 9d09fedd742f9959e5682784657e913d5c554e6d
 
-PODFILE CHECKSUM: 36d6506bd4e15f64222dbf7fa6ba7faa778b4fcb
+PODFILE CHECKSUM: 7e1892ad9df8b8ac4159caae355307225f3efb64
 
 COCOAPODS: 1.5.3

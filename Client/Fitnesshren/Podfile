@@ -10,4 +10,6 @@ target 'Fitnesshren' do
   pod 'Feathers'
   pod 'ISHPullUp'
   pod 'FeathersSwiftSocketIO'
+  pod 'Socket.IO-Client-Swift'
+  pod 'Firebase/Core'
 end

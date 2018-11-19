@@ -12,7 +12,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print(UIFont.fontNames(forFamilyName: "SF Pro Display"))
         
-        print((view.subviews.first! as! UILabel).font!.fontName)
+        //print((view.subviews.first! as! UILabel).font!.fontName)
         
         let provider = SocketProvider(manager: manager)
         feathers = Feathers(provider: provider)
