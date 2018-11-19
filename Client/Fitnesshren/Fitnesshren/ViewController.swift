@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(UIFont.fontNames(forFamilyName: "SF Pro Display"))
-        
-        //print((view.subviews.first! as! UILabel).font!.fontName)
+        // causes cast value error on UILabel on local run - initially commented to check Firebase Auth
+        print((view.subviews.first! as! UILabel).font!.fontName)
         
         let provider = SocketProvider(manager: manager)
         feathers = Feathers(provider: provider)
